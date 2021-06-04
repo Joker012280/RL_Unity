@@ -1,0 +1,86 @@
+************** String Comparator ************
+
+No of Links :
+Equal:  True
+Count: Source: 0015 Exported: 0015
+No of Joints:
+ Equal:  True
+Count: 0014
+
+
+********LINK*****
+
+ Name:
+ Equal:   True
+ Name: Source:        world Exported:        world
+ Inertial Checks
+  Inertia Attributes Null:  True
+ Visual Checks
+ Number of Visual Components Equal:  True
+ Collisions Checks
+Number of Collision Components
+ Equal:  True
+Source Count: 0000
+Exported Count: 0000
+Number of Connected Joints:
+Components Equal:  True
+Count: Source: 0001
+ Exported: 0001
+
+
+********Joint*****
+
+Name:
+Equal:  True
+Name: Source:  joint_world
+Exported:  joint_world
+Name:
+Equal:  True
+Type: Source:        fixed
+Type: Exported:        fixed
+  Origin Checks
+  Origin Nullity Check:   True
+  XYZ position
+  Equal:  True
+   Value: (0.0, 0.0, 0.6)
+  RPY:
+   Equal Check:   True
+   Value:Zero Vector
+Parent:
+Equal:  True
+Parent: Source:        world
+Parent: Exported:        world
+  Axis Checks
+  ,Origin Nullity Check:   True
+  Dynamics Checks
+  Origin Nullity Check:   True
+Child Name:
+Equal:   True
+Child Name: Source:    base_link
+Child Name: Exported:    base_link
+
+
+********LINK*****
+
+ Name:
+ Equal:   True
+ Name: Source:    base_link Exported:    base_link
+ Inertial Checks
+  Inertia Attributes Null:  True
+ Visual Checks
+ Number of Visual Components Equal:  True
+ -Visual Component:   1
+   Visual Component Name :   True
+  Origin Checks
+  Origin Nullity Check:   True
+  Geometry Checks
+   Geometry:
+   Type: Mesh
+   Name Equal:   True
+   Name: Source: package://niryo_one_urdf/meshes/collada/base_link.dae Exported: package://meshes/base_link.dae
+   Scales Equal : (1,1,1)
+  Material Checks
+  Material Nullity Check:  False
+ Child Attributes:  False Child Name: Source:    base_link Exported:    base_link
+
+

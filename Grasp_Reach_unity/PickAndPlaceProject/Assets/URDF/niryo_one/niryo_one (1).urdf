@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robot name="niryo_one (1)">
+  <material name="Mtl">
+    <color rgba="0.825 0.8092 0.7907 1" />
+  </material>
+  <material name="Mtl1">
+    <color rgba="0.4756 0.8228 0.9389 1" />
+  </material>
+  <material name="Default-Diffuse">
+    <color rgba="1 1 1 0.5" />
+  </material>
+  <link name="world" />
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/base_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl">
+        <color rgba="0.825 0.8092 0.7907 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/base_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="shoulder_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/shoulder_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/shoulder_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="arm_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/arm_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/arm_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="elbow_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/elbow_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/elbow_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="forearm_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/forearm_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/forearm_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="wrist_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/wrist_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/wrist_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="hand_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/hand_link.dae" scale="1 1 1" />
+      </geometry>
+      <material name="Mtl1">
+        <color rgba="0.4756 0.8228 0.9389 1" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/hand_link.stl" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="tool_link" />
+  <link name="gripper_base">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_MainSupport.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_MainSupport.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="servo_head">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_ServoHead.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_ServoHead.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="control_rod_right">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_Rod.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_Rod.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="right_gripper">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_ClampLeft.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_ClampLeft.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="control_rod_left">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_Rod.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_Rod.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_gripper">
+    <visual>
+      <geometry>
+        <mesh filename="package://meshes/G1_ClampRight.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="Default-Diffuse">
+        <color rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="package://meshes/G1_ClampRight.STL" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_world" type="fixed">
+    <origin xyz="0 0 0.63" />
+    <parent link="world" />
+    <child link="base_link" />
+  </joint>
+  <joint name="joint_1" type="revolute">
+    <origin xyz="0 0 0.103" />
+    <parent link="base_link" />
+    <child link="shoulder_link" />
+    <limit lower="-3.05432989575564" upper="3.05432989575564" effort="1" velocity="7" />
+  </joint>
+  <joint name="joint_2" type="revolute">
+    <origin rpy="0 4.712389 -4.712389" xyz="0 0 0.08" />
+    <parent link="shoulder_link" />
+    <child link="arm_link" />
+    <limit lower="-1.91986003179295" upper="0.640186969735801" effort="1" velocity="7" />
+  </joint>
+  <joint name="joint_3" type="revolute">
+    <origin rpy="0 0 -1.570796" xyz="0.21 0 0" />
+    <parent link="arm_link" />
+    <child link="elbow_link" />
+    <limit lower="-1.39748498276205" upper="1.57079631462693" effort="1" velocity="7" />
+  </joint>
+  <joint name="joint_4" type="revolute">
+    <origin rpy="0 1.570796 0" xyz="0.0415 0.03 0" />
+    <parent link="elbow_link" />
+    <child link="forearm_link" />
+    <limit lower="-3.05432989575564" upper="3.05432989575564" effort="1" velocity="7" />
+  </joint>
+  <joint name="joint_5" type="revolute">
+    <origin rpy="0 4.712389 0" xyz="0 0 0.18" />
+    <parent link="forearm_link" />
+    <child link="wrist_link" />
+    <limit lower="-1.74533003742269" upper="1.91986003179295" effort="1" velocity="7" />
+  </joint>
+  <joint name="joint_6" type="revolute">
+    <origin rpy="0 1.570796 0" xyz="0.0164 -0.0055 0" />
+    <parent link="wrist_link" />
+    <child link="hand_link" />
+    <limit lower="-2.57436009411748" upper="2.57436009411748" effort="1" velocity="7" />
+  </joint>
+  <joint name="hand_tool_joint" type="fixed">
+    <origin rpy="0 4.712389 -1.570796" xyz="0 0 0.0073" />
+    <parent link="hand_link" />
+    <child link="tool_link" />
+  </joint>
+  <joint name="hand_tool_joint" type="fixed">
+    <origin rpy="-4.712485 0 -1.5707" xyz="0.0246 0 -0.01475" />
+    <parent link="tool_link" />
+    <child link="gripper_base" />
+  </joint>
+  <joint name="servo_head_joint" type="fixed">
+    <parent link="gripper_base" />
+    <child link="servo_head" />
+  </joint>
+  <joint name="control_rod_right" type="fixed">
+    <parent link="servo_head" />
+    <child link="control_rod_right" />
+  </joint>
+  <joint name="gripper_joint_right" type="prismatic">
+    <parent link="control_rod_right" />
+    <child link="right_gripper" />
+    <dynamics damping="0.0500000007450581" />
+    <limit lower="-2.57435989379883" upper="2.57435989379883" effort="1" velocity="100" />
+  </joint>
+  <joint name="control_rod_left" type="fixed">
+    <origin rpy="-3.141593 0.000593 -3.141593" />
+    <parent link="servo_head" />
+    <child link="control_rod_left" />
+  </joint>
+  <joint name="gripper_joint_left" type="prismatic">
+    <origin rpy="-3.141593 0.000593 -3.141593" />
+    <parent link="control_rod_left" />
+    <child link="left_gripper" />
+    <dynamics damping="0.0500000007450581" />
+    <limit lower="-2.57435989379883" upper="2.57435989379883" effort="1" velocity="100" />
+  </joint>
+  <disable_collision joint1="right_gripper" joint2="gripper_base"></disable_collision>
+<disable_collision joint1="left_gripper" joint2="gripper_base"></disable_collision>
+</robot>
